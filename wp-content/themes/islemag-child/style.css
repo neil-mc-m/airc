@@ -11,14 +11,23 @@
  Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
  Text Domain:  islemag-child
 */
-
+#wrapper.boxed {
+    min-width: 100%;
+}
 .navbar-top {
     display: none;
 }
-
-
-.panel {
-    height: 300px;
+.header-content {
+    background-color: #FBBEB6;
+}
+#content {
+    margin-bottom: 10rem;
+}
+#main > .blog {
+    background-color: #9DF859;
+}
+#main > .events {
+    background-color: #F8EC59;
 }
 figure {
     display: none;
