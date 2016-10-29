@@ -6,8 +6,7 @@
 # curl -O https://gist.githubusercontent.com/salcode/b515f520d3f8207ecd04/raw/.gitignore
 # to download this file
 #
-# By default all files are ignored.  You'll need to whitelist
-# any mu-plugins, plugins, or themes you want to include in the repo.
+
 #
 # To ignore uncommitted changes in a file that is already tracked, use
 # git update-index --assume-unchanged
@@ -15,32 +14,14 @@
 # To stop tracking a file that is currently tracked, use
 # git rm --cached
 #
-# Change Log:
-# 20160309 Added favicon files as whitelisted files
-# 20150302 Added composer.json as a whitelisted file
-# 20150227 Created as fork of https://gist.github.com/salcode/9940509,
-#   this version ignores all files by default
+
 # -----------------------------------------------------------------
 
-# ignore everything in the root except the "wp-content" directory.
-/*
-!wp-content/
 
-# ignore everything in the "wp-content" directory, except:
-# mu-plugins, plugins, and themes directories
-wp-content/*
-!wp-content/mu-plugins/
-!wp-content/plugins/
-!wp-content/themes/
-
-# ignore all mu-plugins, plugins, and themes
-# unless explicitly whitelisted at the end of this file
-wp-content/mu-plugins/*
-wp-content/plugins/*
-wp-content/themes/*
 
 # ignore all files starting with . or ~
 .*
+!.htaccess
 ~*
 
 # ignore node dependency directories (used by grunt)
@@ -78,29 +59,6 @@ Thumbs.db
 *.tar
 *.zip
 
-# -------------------------
-# BEGIN Whitelisted Files
-# -------------------------
-
-# track these files, if they exist
-!.gitignore
-!.editorconfig
-!README.md
-!CHANGELOG.md
-!composer.json
-
-# track favicon files, if they exist
-!android-chrome-*.png
-!apple-touch-icon*.png
-!browserconfig.xml
-!favicon*.png
-!favicon*.ico
-!manifest.json
-!mstile-*.png
-!safari-pinned-tab.svg
-
-# track these mu-plugins, plugins, and themes
-# add your own entries here
-!wp-content/mu-plugins/example-mu-plugin/
-!wp-content/plugins/example-plugin/
-!wp-content/themes/example-theme/
+# ignore config file and upload folder
+wp-config.php
+wp-content/uploads/*
