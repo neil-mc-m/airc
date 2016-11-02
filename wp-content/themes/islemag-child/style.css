@@ -4,34 +4,41 @@
  Description:  Islemag Child Theme
  Author:       neil
  Author URI:   http://neil.com
- Template:     islemag
+ Template:     islemag-child
  Version:      1.0.0
  License:      GNU General Public License v2 or later
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
  Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
  Text Domain:  islemag-child
 */
-#wrapper.boxed {
-    min-width: 100%;
-}
-.navbar-top {
+
+.navbar-right {
     display: none;
 }
-.header-content {
-    background-color: #FBBEB6;
-}
+
 #content {
     margin-bottom: 10rem;
 }
-#main > .blog {
-    background-color: #9DF859;
+/*#main > .blog {*/
+    /*background-color: #F3713C;*/
+/*}*/
+/*#main > .events {*/
+    /*background-color: #F8EC59;*/
+/*}*/
+/*#main > .downloads {*/
+    /*background-color: #503CF3;*/
+/*}*/
+.container {
+    padding-left:30px;
+    padding-right:30px;
 }
-#main > .events {
-    background-color: #F8EC59;
+.col-md-4 {
+    padding: 2em;
+
 }
-figure {
-    display: none;
-}
+/*figure {*/
+    /*display: none;*/
+/*}*/
 @media (max-width: 600px) {
     button {
     color: blue;

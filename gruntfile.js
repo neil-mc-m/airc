@@ -24,7 +24,7 @@ module.exports = function(grunt) {
         browserSync: {
             dev: {
                 bsFiles: {
-                    src: ["wp-content/themes/airc/style.css"]
+                    src: ["wp-content/themes/islemag-child/style.css"]
                           
                 },
                 options: {
