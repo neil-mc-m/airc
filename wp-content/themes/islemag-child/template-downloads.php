@@ -16,7 +16,7 @@ get_header(); ?>
                         );
                         $loop = new WP_Query( $args );
                         while ( $loop->have_posts() ) : $loop->the_post();
-                            get_template_part('template-parts/content', get_post_format());
+                            get_template_part('template-parts/content', 'page');
 
 
                         endwhile;

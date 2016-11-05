@@ -24,8 +24,9 @@ module.exports = function(grunt) {
         browserSync: {
             dev: {
                 bsFiles: {
-                    src: ["wp-content/themes/islemag-child/style.css"]
-                          
+                    src: ["wp-content/themes/islemag-child/style.css",
+                          "wp-content/themes/islemag-child/*.php"
+                    ]
                 },
                 options: {
                     proxy: "http://127.0.0.1:8888"

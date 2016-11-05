@@ -3,10 +3,19 @@
  * Template name: FrontPage
  */
 get_header(); ?>
-
+<div class="jumbotron">
+<div class="container-fluid"></div>
+</div>
     <div id="primary" class="content-area">
         <div class="islemag-content-left col-md-12">
             <main id="main" class="site-main" role="main">
+                <div class="container intro-block">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p class="text-center">Airc ~Midlands was established in 1999 to help support families of children with special needs.</p>
+                        </div>
+                    </div>
+                </div>
                 <div class="container">
                     <div class="row">
                <div class="col-md-4 blog">
